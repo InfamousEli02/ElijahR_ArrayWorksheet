@@ -63,13 +63,11 @@ for(let i = 0; i < 5; i++){
 
 //Part 6!
 const array = [10, 20, 30, 40, 50, 60];
-let evenArray = [];
 
-for(let i = 1; i <= array.length; i+=2){
+for(let i = 0; i <= array.length; i+=2){
     const num = array[i];
-    if( num % 2 === 0){
-        // evenArray.push(num);  
-        console.log(num, `is even`);
+    if( num % 2 === 0){ 
+        console.log(num, `is at an even index`);
     }
     
 }
