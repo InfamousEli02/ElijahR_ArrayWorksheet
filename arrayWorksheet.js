@@ -76,11 +76,14 @@ for(let i = 0; i <= array.length; i+=2){
 let studentNames = ["Alice", "Bob", "Charlie"];
 let subjectNames = ["Math", "Science"];
 
+let pairing = []; //new array
+
 for(let i = 0; i < studentNames.length; i++){
     for(let subject = 0; subject < subjectNames.length; subject++){
-        console.log(studentNames[i], `-`, subjectNames[subject]);
+        pairing.push(`${studentNames[i]} - ${subjectNames[subject]}`)
     }
 }
+console.log(pairing);
 //A Nested for loop works by checking if the outer for loop's conditions are still true first
 //before going to the inner for loop. The inner loop executes an action inside the outer loop
 //each time the outer loop does.
